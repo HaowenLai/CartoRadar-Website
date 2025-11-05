@@ -1,15 +1,14 @@
-# Website of PanoRadar
-This is the repository that contains source code for the PanoRadar website.
+# Website of CartoRadar
+This is the repository that contains source code for the CartoRadar website.
 
-Our paper: **Enabling Visual Recognition at Radio Frequency**
+Our paper: **RF-Based 3D SLAM Rivaling Vision Approaches**
 
-If you find PanoRadar useful for your work please cite:
+If you find CartoRadar useful for your work please cite:
 ```tex
-@inproceedings{panoradar,
-  title={Enabling Visual Recognition at Radio Frequency},
-  author={Lai, Haowen and Luo, Gaoxiang and Liu, Yifei and Zhao, Mingmin},
-  booktitle={Proceedings of the 30th Annual International Conference on Mobile Computing and Networking (MobiCom)},
-  pages={388--403},
-  year={2024}
+@inproceedings{cartoradar,
+  title={RF-Based 3D SLAM Rivaling Vision Approaches},
+  author={Lai, Haowen and Zheng, Zhiwei and Zhao, Mingmin},
+  booktitle={Proceedings of the 31th Annual International Conference on Mobile Computing and Networking (MobiCom)},
+  year={2025}
 }
 ```

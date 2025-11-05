@@ -2,9 +2,10 @@
 <html>
 
 <head>
-  <!-- Uncomment this base tag and change to the Github repo path once finish developing! -->
-  <base href="https://github.com/HaowenLai/CartoRadar-Website/raw/refs/heads/master/"> 
-  
+  <!-- When developing, comment this tag to use relative path. -->
+  <!-- When publishing, uncomment this base tag and change to the Github repo path. -->
+  <base href="https://cdn.jsdelivr.net/gh/HaowenLai/CartoRadar-Website@master/">
+
   <meta charset="utf-8">
   <meta name="description" content="CartoRadar: RF-Based 3D SLAM Rivaling Vision Approaches">
   <meta name="keywords" content="CartoRadar, RF-based SLAM, Localization, Mapping, mmWave Radar, Uncertainty Quantification, Robust Perception, Machine Learning">
@@ -52,7 +53,7 @@
 </head>
 
 <body>
-<section class="hero">
+<section class="hero" id="top">
   <div class="hero-body">
     <div class="container">
       <div class="columns is-centered">
@@ -106,8 +107,7 @@
               </span> -->
               <!-- Video Link. -->
               <span class="link-block">
-                <a href="#demo-video"
-                   class="external-link button is-normal is-rounded is-dark">
+                <a class="external-link button is-normal is-rounded is-dark jump-in-page" data-target="demo-video">
                   <span class="icon">
                       <i class="fab fa-youtube"></i>
                   </span>
@@ -177,24 +177,6 @@
   </div>
 </section>
 
-<!-- <style>
-  #teaser {
-    display: block;                /* makes margin auto work */
-    margin: 0 auto;                /* centers horizontally */
-    width: 600px;        /* responsive width */
-    height: auto;                  /* keep aspect ratio */
-  }
-</style> -->
-
-
-<!-- <style>
-  #qualresult {
-    display: block;                /* makes margin auto work */
-    margin: 0 auto;                /* centers horizontally */
-    width: 900px;        /* responsive width */
-    height: auto;                  /* keep aspect ratio */
-  }
-</style> -->
 
 <!-- Abstract -->
 <section class="section">
@@ -488,14 +470,26 @@
 <section class="section" id="BibTeX">
   <div class="container">
     <h3 class="title is-3">BibTeX</h3>
-    <pre>
-<code>@inproceedings{cartoradar,
+    <div class="content has-text-justified">
+      <p>If you find <a class="jump-in-page" data-target="top">CartoRadar</a> method or dataset useful for your work, please consider citing:</p>
+    </div>
+    <pre><code>@inproceedings{cartoradar,
   title={RF-Based 3D SLAM Rivaling Vision Approaches},
   author={Lai, Haowen and Zheng, Zhiwei and Zhao, Mingmin},
   booktitle={Proceedings of the 31th Annual International Conference on Mobile Computing and Networking (MobiCom)},
   year={2025}
-}</code>
-</pre>
+}</code></pre>
+    <div class="content has-text-justified">
+      <br>
+      <p>If our rotating radar design inspires your work, please consider citing <a href="https://waves.seas.upenn.edu/projects/panoradar" target="_blank">PanoRadar</a>:</p>
+    </div>
+    <pre><code>@inproceedings{panoradar,
+  title={Enabling Visual Recognition at Radio Frequency},
+  author={Lai, Haowen and Luo, Gaoxiang and Liu, Yifei and Zhao, Mingmin},
+  booktitle={Proceedings of the 30th Annual International Conference on Mobile Computing and Networking (MobiCom)},
+  pages={388--403},
+  year={2024}
+}</code></pre>
   </div>
 </section>
 
