@@ -4,24 +4,20 @@ body {
 
 
 .footer a {
-    /*font-size: 25px;*/
-    color: #000;
+  /*font-size: 25px;*/
+  color: #000;
 }
 
 .large-font {
-    font-size: 25px;
+  font-size: 25px;
 }
 
 .link-block a {
-    margin-top: 5px;
-    margin-bottom: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .dnerf {
-  font-variant: small-caps;
-}
-
-.panoradar {
   font-variant: small-caps;
 }
 
@@ -33,11 +29,12 @@ body {
 
 .teaser {
   font-family: 'Google Sans', sans-serif;
+  display: block;
+  margin: 0 auto;
 }
 
 
-.publication-title {
-}
+.publication-title {}
 
 .publication-banner {
   max-height: parent;
@@ -52,72 +49,68 @@ body {
   object-fit: fit;
 }
 
-.publication-header .hero-body {
-}
+.publication-header .hero-body {}
 
 .publication-title {
-    font-family: 'Google Sans', sans-serif;
+  font-family: 'Google Sans', sans-serif;
 }
 
 .publication-authors {
-    font-family: 'Google Sans', sans-serif;
+  font-family: 'Google Sans', sans-serif;
 }
 
 .publication-venue {
-    color: #555;
-    width: fit-content;
-    font-weight: bold;
+  color: #555;
+  width: fit-content;
+  font-weight: bold;
 }
 
 .publication-awards {
-    color: #ff3860;
-    width: fit-content;
-    font-weight: bolder;
+  color: #ff3860;
+  width: fit-content;
+  font-weight: bolder;
 }
 
-.publication-authors {
-}
+.publication-authors {}
 
 .publication-authors a {
-   color: hsl(204, 86%, 53%) !important;
+  color: hsl(204, 86%, 53%) !important;
 }
 
 .publication-authors a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .author-block {
   display: inline-block;
 }
 
-.publication-banner img {
-}
+.publication-banner img {}
 
 .publication-authors {
   /*color: #4286f4;*/
 }
 
 .publication-video {
-    position: relative;
-    width: 70%;
-    height: 0;
-    padding-bottom: 50.0%;
-    margin: auto;
-    overflow: hidden;
-    border: 2px solid #bbb;
-    border-radius: 10px !important;
+  position: relative;
+  width: 70%;
+  height: 0;
+  padding-bottom: 50.0%;
+  margin: auto;
+  overflow: hidden;
+  border: 2px solid #bbb;
+  border-radius: 10px !important;
 }
 
 .publication-video iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
-.publication-body img {
-}
+.publication-body img {}
 
 .results-carousel {
   overflow: hidden;
@@ -151,8 +144,7 @@ body {
   border-radius: 5px;
 }
 
-.interpolation-video-column {
-}
+.interpolation-video-column {}
 
 .interpolation-panel .slider {
   margin: 0 !important;
@@ -165,6 +157,7 @@ body {
 #interpolation-image-wrapper {
   width: 100%;
 }
+
 #interpolation-image-wrapper img {
   border-radius: 5px;
 }
@@ -178,3 +171,49 @@ body {
   margin-top: 0.5em;
 }
 
+/* Below is the css used specifically in the project. Change to yours if needed. */
+.comparisons-row {
+  display: flex;
+  gap: 120px;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  margin-bottom: 1em;
+  /* keep them on one line on wide screens */
+}
+
+.comparison {
+  flex: 0 1 32%;
+  /* ~three per row */
+  max-width: 32%;
+  min-width: 260px;
+  /* prevents them from getting too tiny */
+}
+
+.pair {
+  display: flex;
+  gap: 6px;
+}
+
+.pair video {
+  width: 50%;
+  height: auto;
+}
+
+/* Optional: captions under each comparison */
+.cap {
+  text-align: center;
+  margin-top: 2px;
+}
+
+/* On very narrow screens, allow wrapping to keep things readable */
+@media (max-width: 900px) {
+  .comparisons-row {
+    flex-wrap: wrap;
+  }
+
+  .comparison {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}

@@ -2,41 +2,33 @@
 <html>
 
 <head>
-
-  <!-- Google tag (gtag.js) -->
-  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+  <!-- Uncomment this base tag and change to the Github repo path once finish developing! -->
+  <base href="https://github.com/HaowenLai/CartoRadar-Website/raw/refs/heads/master/"> 
   
-    gtag('config', 'G-XXXXXXXXXX');
-  </script> -->
-
   <meta charset="utf-8">
-  <meta name="description" content="PanoRadar: Enabling Visual Recognition at Radio Frequency">
-  <meta name="keywords" content="PanoRadar, RF Sensing, mmWave Radar, Egomotion Estimation, 3D RF Imaging, Robust Perception, Machine Learning">
+  <meta name="description" content="CartoRadar: RF-Based 3D SLAM Rivaling Vision Approaches">
+  <meta name="keywords" content="CartoRadar, RF-based SLAM, Localization, Mapping, mmWave Radar, Uncertainty Quantification, Robust Perception, Machine Learning">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>PanoRadar: Enabling Visual Recognition at Radio Frequency</title>
+  <title>CartoRadar: RF-Based 3D SLAM Rivaling Vision Approaches</title>
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro">
 
-  <link rel="stylesheet" href="https://haowenlai.github.io/PanoRadar-Website/static/css/bulma.min.css">
-  <link rel="stylesheet" href="https://haowenlai.github.io/PanoRadar-Website/static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="https://haowenlai.github.io/PanoRadar-Website/static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="https://haowenlai.github.io/PanoRadar-Website/static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="https://haowenlai.github.io/PanoRadar-Website/static/css/index.css">
-  <link rel="icon" href="https://github.com/HaowenLai/PanoRadar-Website/raw/refs/heads/master/resources/images/favicon.png">
+  <link rel="stylesheet" href="static/css/index.css">
+  <link rel="icon" href="resources/images/favicon.png">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="https://haowenlai.github.io/PanoRadar-Website/static/js/fontawesome.all.min.js"></script>
-  <script src="https://haowenlai.github.io/PanoRadar-Website/static/js/bulma-carousel.min.js"></script>
-  <script src="https://haowenlai.github.io/PanoRadar-Website/static/js/bulma-slider.min.js"></script>
-  <script src="https://haowenlai.github.io/PanoRadar-Website/static/js/index.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
 
   <!-- Navigation Bar -->
-  <!-- <nav class="navbar" role="navigation" aria-label="main navigation">
+  <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
         <span aria-hidden="true"></span>
@@ -46,19 +38,17 @@
     </div>
     <div class="navbar-menu">
       <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-        <a class="navbar-item" href="https://waves.seas.upenn.edu">
+        <a class="navbar-item" href="https://haowenlai.github.io">
           <span class="icon"><i class="fas fa-home"></i></span>
         </a>
   
         <div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link">More Research</a>
-          <div class="navbar-dropdown">
-            <a class="navbar-item" href="https://waves.seas.upenn.edu/projects/panoradar">PanoRadar</a>
-          </div>
+          <div class="navbar-dropdown"><a class="navbar-item" href="https://waves.seas.upenn.edu/projects/panoradar">PanoRadar</a></div>
         </div>
       </div>
     </div>
-  </nav> -->
+  </nav>
 </head>
 
 <body>
@@ -67,7 +57,7 @@
     <div class="container">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">RF-Based 3D SLAM Rivaling Vision Approaches</h1>
+            <h1 class="title is-1 publication-title">CartoRadar: RF-Based 3D SLAM Rivaling Vision Approaches</h1>
           <div class="is-size-4 publication-authors">
             <span class="author-block">
               <a href="https://haowenlai.github.io" target="_blank">Haowen Lai*</a>&nbsp;&nbsp;&nbsp;&nbsp;
@@ -75,16 +65,12 @@
               <a href="https://www.cis.upenn.edu/~mingminz" target="_blank">Mingmin Zhao</a>
               <br/> University of Pennsylvania
               <span class="brmod"><strong><a href="https://www.sigmobile.org/mobicom/2025/" target="_blank">MobiCom 2025</a></strong></span>
-              <!-- <span class="brmod">
-                &#127775; <b>Best Demo Award!</b> <br/>
-                &#127775; <b>1st Place in Student Research Competition!</b>
-              </span> -->
               <br/>
               <div>
-                <img src='https://github.com/HaowenLai/PanoRadar-Website/raw/refs/heads/master/resources/images/artifacts_available_v1_1.png' width=100px>
-                <img src='https://github.com/HaowenLai/PanoRadar-Website/raw/refs/heads/master/resources/images/artifacts_evaluated_functional_v1_1.png' width=100px>
-                <img src='https://github.com/HaowenLai/PanoRadar-Website/raw/refs/heads/master/resources/images/artifacts_evaluated_reusable_v1_1.png' width=100px>
-                <img src='https://github.com/HaowenLai/PanoRadar-Website/raw/refs/heads/master/resources/images/results_reproduced_v1_1.png' width=100px>
+                <img src='resources/images/artifacts_available_v1_1.png' width=100px>
+                <img src='resources/images/artifacts_evaluated_functional_v1_1.png' width=100px>
+                <img src='resources/images/artifacts_evaluated_reusable_v1_1.png' width=100px>
+                <img src='resources/images/results_reproduced_v1_1.png' width=100px>
               </div>
             </span>
           </div>
@@ -119,7 +105,7 @@
                 </a>
               </span> -->
               <!-- Video Link. -->
-              <!-- <span class="link-block">
+              <span class="link-block">
                 <a href="#demo-video"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -127,7 +113,7 @@
                   </span>
                   <span>Video</span>
                 </a>
-              </span> -->
+              </span>
               <!-- Code Link. -->
               <span class="link-block">
                 <a href=""
@@ -139,16 +125,16 @@
                 </a>
               </span>
               <!-- Dataset Link. -->
-              <!-- <span class="link-block">
-                <a href="https://upenn.box.com/v/panoradar-dataset"
+              <span class="link-block">
+                <a href=""
                    class="external-link button is-normal is-rounded is-dark" target="_blank">
                   <span class="icon">
                       <i class="far fa-images"></i>
                   </span>
                   <span>Dataset</span>
                 </a>
-              </span> -->
-              <!-- Dataset Link. -->
+              </span>
+              <!-- News Link. -->
               <!-- <span class="link-block">
                 <a href="https://ai.seas.upenn.edu/news/giving-robots-superhuman-vision-using-radio-signals"
                    class="external-link button is-normal is-rounded is-dark" target="_blank">
@@ -180,32 +166,35 @@
 <section class="hero">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img id="teaser" src="./resources/images/teaser.png" alt="Teaser Image">
+      <img class="teaser" src="resources/images/teaser.png" alt="Teaser Image" width="600px">
       <div class="has-text-centered">
-        CartoRadar enables high-fidelity 3D SLAM using a mmWave radar as the robot navigates through a building. It leverages RF signals to simultaneously (a) localize the robot and (b) build a 3D map of the environment. It captures (c) high-fidelity details, on par with vision baselines. Note the highlighted glass window, which is successfully reconstructed by our method but missed by all vision baselines.
+        CartoRadar enables high-fidelity 3D SLAM using a mmWave radar as the robot navigates through a building.
+        It leverages RF signals to simultaneously (a) localize the robot and (b) build a 3D map of the environment.
+        It captures (c) high-fidelity details, on par with vision baselines.
+        Note the highlighted glass window, which is successfully reconstructed by our method but missed by all vision baselines.
       </div>
     </div>
   </div>
 </section>
 
-<style>
+<!-- <style>
   #teaser {
     display: block;                /* makes margin auto work */
     margin: 0 auto;                /* centers horizontally */
     width: 600px;        /* responsive width */
     height: auto;                  /* keep aspect ratio */
   }
-</style>
+</style> -->
 
 
-<style>
+<!-- <style>
   #qualresult {
     display: block;                /* makes margin auto work */
     margin: 0 auto;                /* centers horizontally */
     width: 900px;        /* responsive width */
     height: auto;                  /* keep aspect ratio */
   }
-</style>
+</style> -->
 
 <!-- Abstract -->
 <section class="section">
@@ -221,8 +210,8 @@
             To address this challenge and enable robust RF sensing, CartoRadar introduces a novel, training-free uncertainty quantification method tailored to RF signals.
             Additionally, CartoRadar features an efficient SLAM algorithm that incorporates this uncertainty into the mapping process.
             We deploy CartoRadar on a mobile robot and conduct extensive evaluations across 14 floors in 5 buildings.
-            Results show that CartoRadar achieves a trajectory error of 14.1~cm, outperforming camera-based baselines by 72.1%.
-            For mapping, CartoRadar achieves an accuracy of 7.4~cm and a completion of 8.1~cm, improving over vision methods by 46.2% and 67.6%, respectively.
+            Results show that CartoRadar achieves a trajectory error of 14.1 cm, outperforming camera-based baselines by 72.1%.
+            For mapping, CartoRadar achieves an accuracy of 7.4 cm and a completion of 8.1 cm, improving over vision methods by 46.2% and 67.6%, respectively.
           </p>
         </div>
       </div>
@@ -238,21 +227,15 @@
       <div class="column is-three-quarters">
         <h3 class="title is-3">Demo Video</h3>
         <div class="publication-video">
-          <!-- <iframe type="text/html" width="1280" height="720" src="https://www.youtube.com/embed/dKyQ1XuPorU?si=2C2en68cLWDNOS41" 
-                  title="PanoRadar Teaser Video" frameborder="0" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                  allowfullscreen>
-          </iframe> -->
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/WRiaRZXQ4gM?si=G6Wbuzr-Hc1cclgP"
-          title="PanoRadar Teaser Video" frameborder="0" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                  allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/WRiaRZXQ4gM?si=vz9Uj9u9xJ57GbSX" title="YouTube video player"
+                  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+          </iframe>
         </div>
       </div>
     </div>
   </div>
 </section>
-
 
 <!-- Overview -->
 <section class="section">
@@ -261,17 +244,15 @@
       <div class="column is-full-width">
         <h3 class="title is-3">System Overview</h3>
         <div class="content has-text-centered">
-          <!-- <video id="matting-video" autoplay muted loop playsinline width="75%">
-            <source src="https://github.com/HaowenLai/PanoRadar-Website/raw/refs/heads/master/resources/videos/overview.mp4" type="video/mp4">
-          </video> -->
-          <img id="teaser" src="./resources/images/overview.png" alt="Teaser Image">
-
+          <img class="teaser" src="resources/images/overview.png" alt="Overview Image" width="700px">
         </div>
         <div class="content has-text-justified">
           <p>This figure illustrates the system architecture of CartoRadar, consisting of two components:</p>
           <ol>
             <li><strong>Robust RF Sensing with Uncertainty quantification</strong> takes in the raw RF signals and outputs range images with uncertainty estimates for each pixel.</li>
-            <li><strong>Uncertainty-aware RF-Based SLAM</strong> takes in the predicted range images and incorporates the uncertainty estimates into the SLAM process. We propose a novel occupancy field with probabilistic learning, effectively improving the accuracy, robustness and efficiency.</li>
+            <li><strong>Uncertainty-aware RF-Based SLAM</strong> takes in the predicted range images and incorporates the uncertainty estimates into the SLAM process.
+              We propose a novel implicit occupancy field with probabilistic learning, effectively improving the accuracy, robustness and efficiency.
+            </li>
           </ol>
         </div>
       </div>
@@ -285,7 +266,7 @@
   <div class="container">
     <div class="columns is-centered has-text-centered">
       <div class="column is-full-width">
-        <h3 class="title is-3">Quantifying Uncertainty in RF Sensing</h3>
+        <h3 class="title is-3">Robust RF Sensing with Uncertainty quantification</h3>
         <table style="border-collapse: collapse; width: 100%; text-align: center; font-family: Arial, sans-serif;">
   <thead>
     <tr style="border-bottom: 2px solid #333;">
@@ -360,10 +341,12 @@
       </tbody>
     </table>
 
-          
         <div class="content has-text-justified">
+          <br>
           <p>
-            We compare our proposed uncertainty quantification methods with three baselines and report the NLL and AUSE results in the table above. Our method can be applied out of the box, without any retraining, and still achieves better performance than the traditional baseline methods. Furthermore, with one additional training step, our method can achieve even greater performance improvements.
+            We compare our proposed uncertainty quantification methods with three baselines and report the NLL and AUSE results in the table above.
+            Our method can be applied out of the box, without any re-training, and still achieves better performance than the traditional baseline methods.
+            Furthermore, with one additional training step, our method can achieve even greater performance improvements.
           </p>
         </div>
       </div>
@@ -371,59 +354,24 @@
   </div>
 </section>
 
-<style>
-  .comparisons-row {
-    display: flex;
-    gap: 120px;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: nowrap;            /* keep them on one line on wide screens */
-  }
-
-  .comparison {
-    flex: 0 1 32%;                /* ~three per row */
-    max-width: 32%;
-    min-width: 260px;             /* prevents them from getting too tiny */
-  }
-
-  .pair {
-    display: flex;
-    gap: 6px;
-  }
-
-  .pair video {
-    width: 50%;
-    height: auto;
-  }
-
-  /* Optional: captions under each comparison */
-  .cap {
-    text-align: center;
-    font: 12px/1.4 system-ui, sans-serif;
-    margin-top: 4px;
-    opacity: 0.8;
-  }
-
-  /* On very narrow screens, allow wrapping to keep things readable */
-  @media (max-width: 900px) {
-    .comparisons-row { flex-wrap: wrap; }
-    .comparison { flex: 1 1 100%; max-width: 100%; }
-  }
-</style>
-
 <!-- Qualitative Results -->
 <section class="section">
   <div class="container">
     <div class="columns is-centered has-text-centered">
       <div class="column is-full-width">
-        <h3 class="title is-3">Qualitative Results</h3>
-        <img id="qualresult" src="./resources/images/QualResult.png">
+        <h3 class="title is-3">Uncertainty-aware RF-Based SLAM</h3>
+        <img class="teaser" src="resources/images/QualResult.png" width="1200px">
         <div class="content has-text-justified">
+          <br>
           <p>
-We present the mapping results (left) and detailed views (right) of CartoRadar across different environments. For each trajectory, our results are compared with the corresponding LiDAR mesh map. The maps are color-coded according to surface normals, and the trajectories are shown as yellow lines. We also provide accompanying videos for better visualization and zoomed-in views of details.          </p>
+            We present the mapping results (left) and detailed views (right) of CartoRadar across different environments.
+            For each trajectory, our results are compared with the corresponding LiDAR mesh map.
+            The maps are color-coded according to surface normals, and the trajectories are shown as yellow lines.
+            We also provide accompanying videos for better visualization and zoomed-in views of details.
+          </p>
         </div>
 
-        <h4 class="title is-4">SLAM Result</h4>
+        <h4 class="title is-4">Overall Localization and Mapping</h4>
         <div class="comparisons-row">
           <!-- Scene Comparison 1 -->
           <div class="comparison">
@@ -450,6 +398,7 @@ We present the mapping results (left) and detailed views (right) of CartoRadar a
             <div class="cap">Scene 2: Ours vs. Ground Truth</div>
           </div>
       </div>
+      <br>
 
       <h4 class="title is-4">High-Fidelity Details</h4>
       <div class="comparisons-row">
@@ -523,14 +472,10 @@ We present the mapping results (left) and detailed views (right) of CartoRadar a
             Our system is evaluated over 14 floors across 5 separate buildings.
             The diversity of the buildings is notable, featuring distinct designs and materials with construction dates stretching from 1906 to 2006.
             The entire dataset was collected traversing a distance of 1527 meters.
-            After signal processing, it consists of 6637 synchronized RF and LiDAR frames, respectively, aggregating to 223~GB.
+            After signal processing, it consists of 6637 synchronized RF and LiDAR frames, respectively, aggregating to 223 GB.
           </p>
           <p>
-            We will release code and
-            dataset to facilitate future research in this direction.
-            <!-- We will release <a href="https://github.com/penn-waves-lab/PanoRadar" target="_blank">code</a> and
-            <a href="https://upenn.box.com/v/panoradar-dataset" target="_blank">dataset</a> to facilitate future research in this direction. Instructions can be found in
-            the readme of our <a href="https://github.com/penn-waves-lab/PanoRadar" target="_blank">github repo</a>. -->
+            We will release code and dataset to facilitate future research in this direction.
           </p>
         </div>
       </div>
@@ -542,15 +487,14 @@ We present the mapping results (left) and detailed views (right) of CartoRadar a
 <!-- BibTeX citation -->
 <section class="section" id="BibTeX">
   <div class="container">
-    <h3 class="title">BibTeX</h3>
+    <h3 class="title is-3">BibTeX</h3>
     <pre>
-      <!-- <code>@inproceedings{panoradar,
-  title={Enabling Visual Recognition at Radio Frequency},
-  author={Lai, Haowen and Luo, Gaoxiang and Liu, Yifei and Zhao, Mingmin},
-  booktitle={Proceedings of the 30th Annual International Conference on Mobile Computing and Networking (MobiCom)},
-  pages={388--403},
-  year={2024}
-}</code> -->
+<code>@inproceedings{cartoradar,
+  title={RF-Based 3D SLAM Rivaling Vision Approaches},
+  author={Lai, Haowen and Zheng, Zhiwei and Zhao, Mingmin},
+  booktitle={Proceedings of the 31th Annual International Conference on Mobile Computing and Networking (MobiCom)},
+  year={2025}
+}</code>
 </pre>
   </div>
 </section>
@@ -559,7 +503,7 @@ We present the mapping results (left) and detailed views (right) of CartoRadar a
 <!-- Acknowledgements -->
 <section class="section" id="Acknowledgements">
   <div class="container">
-    <h3 class="title">Acknowledgments</h3>
+    <h3 class="title is-3">Acknowledgments</h3>
       <div class="is-vcentered interpolation-panel">
         <p>
           This work was carried out in the <a href="https://waves.seas.upenn.edu" target="_blank">WAVES Lab</a>, University of Pennsylvania.
